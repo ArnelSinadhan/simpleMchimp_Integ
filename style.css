@@ -5,8 +5,11 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: Nabla, system-ui;
+  background-image: url(Bg-map2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,15 +17,10 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: transparent;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  margin-bottom: 20px;
-  text-align: center;
+  box-shadow: 1px 1px 20px 4px rgba(0, 0, 0, 0.75);
 }
 
 form {
@@ -30,12 +28,16 @@ form {
   flex-direction: column;
 }
 
-label {
-  margin-bottom: 8px;
+h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(0, 68, 255);
 }
 
 input {
   padding: 10px;
+  width: 100%;
   margin-bottom: 15px;
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -43,7 +45,8 @@ input {
 
 button {
   padding: 10px;
-  background-color: #28a745;
+  width: 100%;
+  background-color: #0da6ec;
   color: white;
   border: none;
   border-radius: 4px;
@@ -51,10 +54,33 @@ button {
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #15a2c5;
 }
 
 .status {
   margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+
+}
+#location-input {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 12px;
+}
+.container map {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
