@@ -4,28 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subscribe to Newsletter</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>SUBSCRIBE TO NEWSLETTER</h1>
-      <form id="subscribeForm">
-        <input type="email" id="email" name="email" placeholder="Enter your email">
-        <button type="submit">Subscribe</button>
-        <div class="status"></div>
-      </form>
-      <form>
-        <div class="container-map">
-          <h1>GOOGLE MAP LOCATION POINTER</h1>
-          <input type="text" id="location-input" placeholder="Click on the map to get the location" readonly>
-          <div id="map"></div>
-        </div>
-      </form>
+    <div class="bodyContainer">
+      <div class="map-wrapper">
+        <h1>GOOGLE MAP LOCATION POINTER</h1>
+        <div id="map"></div>
+      </div>
+
+      <div class="formWrapper">
+        <input type="text" id="location-input" placeholder="Click on the map to get the location" readonly />
+        <h1>SUBSCRIBE TO NEWSLETTER</h1>
+
+        <form id="subscribeForm">
+          <input type="email" id="email" name="email" placeholder="Enter your email" />
+          <button type="submit">Subscribe</button>
+          <div class="status"></div>
+        </form>
+      </div>
     </div>
+
     <script src="script.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbt_lCssLnABUXciL1ruFgDU5bANDzwjQ&callback=initMap"></script>>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbt_lCssLnABUXciL1ruFgDU5bANDzwjQ&callback=initMap"></script>
+    >
   </body>
 </html>

@@ -6,7 +6,7 @@
 
 body {
   font-family: Nabla, system-ui;
-  background-image: url(Bg-map2.jpg);
+  /* background-image: url(Bg-map2.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -64,17 +64,16 @@ button:hover {
 }
 
 #map {
-  height: 400px;
+  height: 600px;
   width: 100%;
   margin-bottom: 20px;
   border: 2px solid #ddd;
   border-radius: 8px;
-
+  padding: 40px;
 }
 #location-input {
   width: 100%;
   padding: 10px;
-  margin: 20px 0;
   font-size: 12px;
 }
 .container map {
@@ -83,4 +82,18 @@ button:hover {
   padding: 20px;
 }
 
-
+.map-wrapper {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  margin-top: 50px;
+}
+.bodyContainer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
